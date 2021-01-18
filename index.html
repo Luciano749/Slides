@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css-->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsiveness.css">
+
+    <title>Carrossel</title>
+</head>
+
+<body>
+    <div id="container">
+        <img src="https://source.unsplash.com/random?10" alt="img" id="main-image">
+
+        <div id="small-images">
+            <img src="https://source.unsplash.com/random?10" class="img" onclick="changeImage(this)" alt="img">
+            <img src="https://source.unsplash.com/random?22" class="img" onclick="changeImage(this)" alt="img">
+            <img src="https://source.unsplash.com/random?453" class="img" onclick="changeImage(this)" alt="img">
+            <img src="https://source.unsplash.com/random?4" class="img" onclick="changeImage(this)" alt="img">
+            <img src="https://source.unsplash.com/random?5" class="img" onclick="changeImage(this)" alt="img">
+            <img src="https://source.unsplash.com/random?6" class="img" onclick="changeImage(this)" alt="img">
+        </div>
+        <!--SMALL-IMAGES-->
+
+        <input type="checkbox" id="checkbox1" onclick="checkItem('checkbox1')">
+
+    </div>
+    <!--container-->
+
+    <!--javascript-->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

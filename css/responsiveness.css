@@ -62,10 +62,6 @@
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 3000px) {
-  body {
-    min-height: 1075px;
-  }
-
   #container {
     width: 60%;
   }

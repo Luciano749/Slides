@@ -6,9 +6,22 @@
   border-radius: 5%;
   margin: auto;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+
+  -webkit-transition: background-color 400ms;
+
+  -o-transition: background-color 400ms;
 
   transition: background-color 400ms;
 }
@@ -23,11 +36,23 @@
   height: 15%;
   background-color: rgb(45, 92, 133);
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   padding: 3%;
+
+  -webkit-transition: background-color 400ms;
+
+  -o-transition: background-color 400ms;
 
   transition: background-color 400ms;
 }
@@ -44,6 +69,8 @@
   bottom: 0;
 
   opacity: 0.5;
+  -webkit-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
@@ -63,6 +90,10 @@ button {
   font-size: 3rem;
   font-weight: bolder;
 
+  -webkit-transition: background-color 250ms;
+
+  -o-transition: background-color 250ms;
+
   transition: background-color 250ms;
 }
 
@@ -74,6 +105,7 @@ button:hover {
 input[type="checkbox"],
 input[type="checkbox"]::after,
 input[type="checkbox"]::before {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -100,8 +132,20 @@ input[type="checkbox"]::after {
   left: 0;
   z-index: 2;
 
+  -webkit-transition: left 0.15s cubic-bezier(0.25, 0.8, 0.25, 0.1),
+    -webkit-transform 0.15s ease-in;
+
+  transition: left 0.15s cubic-bezier(0.25, 0.8, 0.25, 0.1),
+    -webkit-transform 0.15s ease-in;
+
+  -o-transition: left 0.15s cubic-bezier(0.25, 0.8, 0.25, 0.1),
+    transform 0.15s ease-in;
+
   transition: left 0.15s cubic-bezier(0.25, 0.8, 0.25, 0.1),
     transform 0.15s ease-in;
+
+  transition: left 0.15s cubic-bezier(0.25, 0.8, 0.25, 0.1),
+    transform 0.15s ease-in, -webkit-transform 0.15s ease-in;
 }
 
 input[type="checkbox"]::before {
@@ -122,6 +166,8 @@ input[type="checkbox"]::after {
 
   border-radius: 100%;
 
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -135,5 +181,7 @@ input[type="checkbox"]:checked::after {
 }
 
 input[type="checkbox"]:active::after {
+  -webkit-transform: scale(1.15, 0.85);
+  -ms-transform: scale(1.15, 0.85);
   transform: scale(1.15, 0.85);
 }

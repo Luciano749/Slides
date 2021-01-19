@@ -12,9 +12,6 @@
 html,
 body {
   height: 100%;
-  -webkit-transition: background-color 400ms;
-  -o-transition: background-color 400ms;
-  transition: background-color 400ms;
 }
 
 a {

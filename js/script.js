@@ -24,7 +24,7 @@ function checkIA() {
   let container = document.getElementById("container");
   let smallImages = document.getElementById("small-images");
 
-  setInterval(function () {
+  window.onload = setInterval(function () {
     if (checkA.checked == true) {
       o = true;
     } else {
